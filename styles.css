@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#periodic-table {
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    gap: 5px;
+    margin: 20px;
+}
+
+.element {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+element:hover {
+    background-color: #f0f0f0;
+}
+
+#element-info {
+    margin-top: 20px;
+}
+.metal {
+    background-color: #f0e68c; /* Light yellow for metals */
+}
+
+.nonmetal {
+    background-color: #ffcccb; /* Light red for nonmetals */
+}
+
+.metalloid {
+    background-color: #d3d3d3; /* Light gray for metalloids */
+}
+
+.noble-gas {
+    background-color: #add8e6; /* Light blue for noble gases */
+}
